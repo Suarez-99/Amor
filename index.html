@@ -319,3 +319,42 @@ body {
              <p>&copy; 2023 Crislu - Fabrica de Muebles. Todos los derechos reservados.</p>
          </footer>
      </body>
+     <!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Expansión de Título</title>
+    <style>
+        /* Estilo para el título */
+        .titulo {
+            font-size: 24px;
+            cursor: pointer;
+        }
+
+        /* Estilo inicial para el contenido (oculto) */
+        .contenido {
+            display: none;
+            font-size: 18px;
+        }
+    </style>
+</head>
+<body>
+    <h1 class="titulo" onclick="expandirContenido()">Título Expansible</h1>
+    <div class="contenido" id="contenido">
+        <p>Este es un ejemplo de un título expansible. Puedes hacer clic en el título para mostrar u ocultar el contenido.</p>
+        <p>Aquí puedes agregar más detalles o información que desees mostrar.</p>
+    </div>
+
+    <script>
+        function expandirContenido() {
+            var contenido = document.getElementById("contenido");
+            if (contenido.style.display === "none") {
+                contenido.style.display = "block";
+            } else {
+                contenido.style.display = "none";
+            }
+        }
+    </script>
+</body>
+</html>
